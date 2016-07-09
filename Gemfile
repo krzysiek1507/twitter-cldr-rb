@@ -35,5 +35,9 @@ group :test do
   gem 'launchy'
 
   gem 'benchmark-ips'
+
+  # for Ruby 1.9.3
+  # lock only for tests because json gem requires Ruby ~> 2.0 since v2.0
+  gem 'json', '~> 1.0'
 end
 
